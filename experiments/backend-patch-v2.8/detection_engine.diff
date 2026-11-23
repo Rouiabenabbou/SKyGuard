@@ -1,0 +1,86 @@
+--- x/detection_engine.v26.py	2026-11-21 02:15:45.964498215 +0000
++++ cs/backend/app/detection_engine.py	2026-11-21 03:43:15.029867229 +0000
+@@ -31,6 +31,19 @@
+ from app.event_log import log_event
+ from app.models import Device, SecurityAlert
+ from app.websocket_manager import manager
++import os
++from app.link_probe import probe as link_probe
++
++# v2.8 (experimental): "unaware" = v2.6 behaviour; "aware" = rules conditioned on the
++# independently measured link state (see link_probe.py)
++DETECTION_MODE = os.getenv("DETECTION_MODE", "unaware")
++BACKLOG_MARGIN_S = 2.0       # a send time up to 2 s before the measured outage start counts as inside it
++BACKLOG_FACTOR = 1.5         # budget = 1.5 x outage length x the device's usual send rate + 5
++RECONNECT_GRACE_S = 10.0
++# v1 (first version) also excused messages that arrive *while* the outage is still in progress;
++# X1 run 1 showed this lets floods during an outage through, so v2 excuses a message only
++# once the measured outage has ended (true backlog can only arrive after recovery).
++AWARE_VARIANT = os.getenv("AWARE_VARIANT", "v2")     # reconnects within 10 s after a measured link recovery are link-caused
+ 
+ SEVERITIES = ["low", "medium", "high", "critical"]
+ 
+@@ -41,6 +54,13 @@
+         self.connection_times: dict[str, deque] = defaultdict(deque)
+         self.last_alert: dict[tuple[str, str], float] = {}
+         self.session_id_provider = lambda: None  # set by main.py
++        self.last_send: dict[str, float] = {}           # device -> last ts_sent (s) of a normal message
++        self.send_rate: dict[str, float] = {}           # device -> EWMA of messages per second (send clock)
++        self.backlog_used: dict[tuple, int] = {}        # (device, outage start) -> backlog messages excused
++        self.backlog_excused = 0
++        self.reconnects_excused = 0
++        if DETECTION_MODE == "aware":
++            link_probe.start()
+ 
+     # ------------------------------------------------------------ helpers
+     @staticmethod
+@@ -95,8 +115,38 @@
+         return alert
+ 
+     # -------------------------------------------------------------- rules
+-    async def check_message_rate(self, db: Session, device_id: str) -> None:
++    def _is_backlog(self, device_id: str, ts_sent) -> bool:
++        """v2.8 aware mode: a late message whose send time lies inside a measured outage of
++        the device's link is backlog, up to a budget derived from the outage length and
++        the device's usual rate (so a forged-timestamp flood still exceeds it)."""
++        try:
++            t = float(ts_sent) / 1000.0
++        except (TypeError, ValueError):
++            return False
++        iv = link_probe.outage_at(device_id, t, BACKLOG_MARGIN_S)
++        if iv is None:
++            if device_id in self.last_send and t > self.last_send[device_id]:
++                gap = t - self.last_send[device_id]
++                if 0.05 < gap < 60:
++                    r = 1.0 / gap
++                    self.send_rate[device_id] = r if device_id not in self.send_rate else 0.9 * self.send_rate[device_id] + 0.1 * r
++            self.last_send[device_id] = max(t, self.last_send.get(device_id, 0))
++            return False
++        if AWARE_VARIANT == "v2" and (iv[1] is None or time.time() < iv[1]):
++            return False
++        end = iv[1] if iv[1] is not None else time.time()
++        budget = int(BACKLOG_FACTOR * (end - iv[0] + BACKLOG_MARGIN_S) * self.send_rate.get(device_id, 1.0)) + 5
++        key = (device_id, iv[0])
++        if self.backlog_used.get(key, 0) >= budget:
++            return False
++        self.backlog_used[key] = self.backlog_used.get(key, 0) + 1
++        self.backlog_excused += 1
++        return True
++
++    async def check_message_rate(self, db: Session, device_id: str, ts_sent=None) -> None:
+         """Rule A. Called for EVERY incoming telemetry message, valid or not."""
++        if DETECTION_MODE == "aware" and self._is_backlog(device_id, ts_sent):
++            return  # delivered late because of a measured outage: not part of the device's current rate
+         now = time.time()
+         count = self._count_recent(self.message_times[device_id], now, config.RATE_WINDOW_SECONDS)
+         rate = count / config.RATE_WINDOW_SECONDS
+@@ -139,6 +189,9 @@
+     async def connection_attempt(self, db: Session, device_id: str) -> None:
+         """Rule D. Called each time a device announces it came online."""
+         now = time.time()
++        if DETECTION_MODE == "aware" and link_probe.recovered_within(device_id, now, RECONNECT_GRACE_S):
++            self.reconnects_excused += 1
++            return  # reconnect right after a measured link recovery: caused by the link
+         count = self._count_recent(self.connection_times[device_id], now, config.CONN_WINDOW_SECONDS)
+         if count > config.CONN_THRESHOLD:
+             await self.raise_alert(

@@ -1,0 +1,2 @@
+# Only needed if you run the simulator outside the backend venv
+paho-mqtt>=2.0

@@ -1,0 +1,11 @@
+--- x/telemetry_service.v27.py	2026-11-21 02:15:45.966573013 +0000
++++ cs/backend/app/telemetry_service.py	2026-11-21 02:15:45.982718033 +0000
+@@ -24,7 +24,7 @@
+     # Rule A: count every message, even invalid ones (floods are often garbage).
+     claimed_id = payload.get("device_id")
+     if isinstance(claimed_id, str) and claimed_id:
+-        await detector.check_message_rate(db, claimed_id)
++        await detector.check_message_rate(db, claimed_id, payload.get("ts_sent"))
+ 
+     try:
+         reading = TelemetryIn(**payload)

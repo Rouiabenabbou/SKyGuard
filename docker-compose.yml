@@ -1,0 +1,50 @@
+# CyberShield SatCom 3D in the cloud (e.g. a Huawei Cloud ECS server): docs/CLOUD_DEPLOY.md
+#   1. copy .env.cloud.example to .env and change the passwords
+#   2. docker compose up -d --build
+#   3. open http://<server IP>   (dashboard, API at /docs, WebSocket at /ws)
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: cybershield
+      POSTGRES_USER: cybershield
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cybershield -d cybershield"]
+      interval: 5s
+      retries: 10
+
+  mqtt:
+    image: eclipse-mosquitto:2
+    restart: unless-stopped
+    volumes:
+      - ./iot/mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+    ports:
+      - "1883:1883"   # real ESP32 boards connect here (use secure MQTT on 8883 for the internet: docs/SECURE_MQTT.md)
+
+  app:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+      mqtt:
+        condition: service_started
+    env_file: .env
+    environment:
+      # Use Huawei Cloud RDS instead of the db container by setting DATABASE_URL in .env
+      DATABASE_URL: ${DATABASE_URL:-postgresql://cybershield:${POSTGRES_PASSWORD}@db:5432/cybershield}
+      MQTT_HOST: ${MQTT_HOST:-mqtt}   # v2.4: or a cloud broker set in .env
+      EXPORTS_DIR: /app/exports
+      FRONTEND_ORIGINS: ${FRONTEND_ORIGINS:-http://localhost}
+    volumes:
+      - exports:/app/exports
+    ports:
+      - "80:8000"
+
+volumes:
+  pgdata:
+  exports:

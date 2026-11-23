@@ -1,0 +1,298 @@
+{
+  "attacks": 13,
+  "detected": 13,
+  "detection_rate_pct": 100.0,
+  "detection_s_mean": 0.78,
+  "detection_s_median": 0.07,
+  "detection_s_max": 1.87,
+  "baseline_seconds": 300.0,
+  "false_alarms": 1,
+  "false_alarms_per_hour": 12.0,
+  "failover": {
+    "enabled": true,
+    "settings": {
+      "handover_delay_s": [
+        1.5,
+        3.0
+      ],
+      "failback_stable_s": 10.0,
+      "failover_on_degraded": true,
+      "degraded_failover_s": 6.0
+    },
+    "devices": {
+      "IOT-001": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 1,
+        "reason": "primary path healthy for 10 s"
+      },
+      "IOT-002": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": ""
+      },
+      "IOT-003": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 1,
+        "reason": "primary path healthy for 10 s"
+      },
+      "IOT-004": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 1,
+        "reason": "primary path healthy for 10 s"
+      },
+      "IOT-005": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 1,
+        "reason": "primary path healthy for 10 s"
+      },
+      "IOT-006": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": ""
+      },
+      "IOT-007": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": ""
+      },
+      "IOT-008": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": ""
+      },
+      "IOT-009": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": ""
+      },
+      "IOT-101": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 1,
+        "reason": "primary path healthy for 10 s"
+      },
+      "IOT-102": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": ""
+      },
+      "IOT-103": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": ""
+      },
+      "IOT-104": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": ""
+      },
+      "IOT-105": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 1,
+        "reason": "primary path healthy for 10 s"
+      },
+      "IOT-201": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": ""
+      },
+      "IOT-202": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": ""
+      },
+      "IOT-203": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": ""
+      },
+      "IOT-204": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": ""
+      },
+      "IOT-205": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": ""
+      },
+      "IOT-301": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": "primary path healthy for 10 s"
+      },
+      "IOT-302": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": ""
+      },
+      "IOT-303": {
+        "mode": "switching",
+        "switching_to": "primary",
+        "lost_readings": 0,
+        "reason": "primary path healthy for 10 s"
+      },
+      "IOT-304": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": ""
+      },
+      "IOT-305": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": ""
+      },
+      "IOT-401": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": ""
+      },
+      "IOT-402": {
+        "mode": "primary",
+        "switching_to": null,
+        "lost_readings": 0,
+        "reason": ""
+      }
+    },
+    "stats": {
+      "failovers": 8,
+      "failbacks": 8,
+      "outages": 0,
+      "avg_handover_ms": 2224,
+      "avg_interruption_ms": 1539,
+      "readings_lost": 6
+    },
+    "drill_active": false,
+    "drill_seconds_left": 0
+  },
+  "per_attack": [
+    {
+      "attack": "excessive-traffic",
+      "target": "IOT-002",
+      "detected": true,
+      "seconds": 0.03,
+      "alert": "ml_anomaly",
+      "severity": "medium"
+    },
+    {
+      "attack": "unauthorized-device",
+      "target": "IOT-999",
+      "detected": true,
+      "seconds": 0.03,
+      "alert": "unauthorized_device",
+      "severity": "high"
+    },
+    {
+      "attack": "abnormal-reading",
+      "target": "IOT-001",
+      "detected": true,
+      "seconds": 0.07,
+      "alert": "abnormal_sensor_value",
+      "severity": "high"
+    },
+    {
+      "attack": "connection-storm",
+      "target": "IOT-003",
+      "detected": true,
+      "seconds": 1.62,
+      "alert": "suspicious_connections",
+      "severity": "high"
+    },
+    {
+      "attack": "mqtt-brute-force",
+      "target": "IOT-002",
+      "detected": true,
+      "seconds": 1.85,
+      "alert": "mqtt_bruteforce",
+      "severity": "high"
+    },
+    {
+      "attack": "unauthorized-publish",
+      "target": "IOT-002",
+      "detected": true,
+      "seconds": 0.03,
+      "alert": "unauthorized_publish",
+      "severity": "high"
+    },
+    {
+      "attack": "botnet-beaconing",
+      "target": "IOT-003",
+      "detected": true,
+      "seconds": 0.03,
+      "alert": "threat_intel_match",
+      "severity": "critical"
+    },
+    {
+      "attack": "port-scan",
+      "target": "IOT-001",
+      "detected": true,
+      "seconds": 1.62,
+      "alert": "port_scan",
+      "severity": "medium"
+    },
+    {
+      "attack": "data-exfiltration",
+      "target": "IOT-003",
+      "detected": true,
+      "seconds": 0.07,
+      "alert": "threat_intel_match",
+      "severity": "high"
+    },
+    {
+      "attack": "5g-auth-attack",
+      "target": "IOT-002",
+      "detected": true,
+      "seconds": 1.87,
+      "alert": "5g_auth_anomaly",
+      "severity": "high"
+    },
+    {
+      "attack": "config-tampering",
+      "target": "IOT-001",
+      "detected": true,
+      "seconds": 0.04,
+      "alert": "unauthorized_config_change",
+      "severity": "high"
+    },
+    {
+      "attack": "gnss-jamming",
+      "target": "IOT-001",
+      "detected": true,
+      "seconds": 1.85,
+      "alert": "gnss_jamming",
+      "severity": "critical"
+    },
+    {
+      "attack": "gnss-spoofing",
+      "target": "IOT-003",
+      "detected": true,
+      "seconds": 1.06,
+      "alert": "gnss_spoofing",
+      "severity": "high"
+    }
+  ],
+  "measured_at": "2026-11-05 13:46"
+}

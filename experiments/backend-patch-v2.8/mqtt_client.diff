@@ -1,0 +1,39 @@
+--- x/mqtt_client.v26.py	2026-11-21 02:23:08.124608972 +0000
++++ cs/backend/app/mqtt_client.py	2026-11-21 02:23:08.138073599 +0000
+@@ -22,6 +22,8 @@
+ from app.event_log import log_event
+ from app.models import Device
+ from app.telemetry_service import ingest_telemetry
++import os as _os
++_PROC_LOG = open(_os.environ['PROC_LOG'], 'a', buffering=1) if _os.getenv('PROC_LOG') else None
+ from app.websocket_manager import manager
+ 
+ 
+@@ -105,7 +107,7 @@
+             self._schedule(self._log_connection("mqtt_disconnected", "Lost connection to MQTT broker, retrying"))
+ 
+     def _on_message(self, client, userdata, msg):
+-        self._schedule(self.handle_message(msg.topic, msg.payload))
++        self._schedule(self.handle_message(msg.topic, msg.payload, time.time()))
+ 
+     def _schedule(self, coroutine) -> None:
+         if self.loop:
+@@ -117,7 +119,8 @@
+             await log_event(db, event_type, description, category="system",
+                             session_id=self.session_id_provider())
+ 
+-    async def handle_message(self, topic: str, raw: bytes) -> None:
++    async def handle_message(self, topic: str, raw: bytes, t_rx: float | None = None) -> None:
++        t_start = time.time()
+         parsed = mqtt_topics.parse_device_topic(topic)
+         if parsed is None:
+             return
+@@ -154,6 +157,8 @@
+             # 3. Validate, store and broadcast (same path as Phase 2).
+             transport_source = f"{payload.get('source', 'device')}/mqtt"
+             result = await ingest_telemetry(db, {**payload, "source": transport_source}, session_id=session_id)
++            if _PROC_LOG and payload.get("seq") is not None:  # v2.8 measurement: queueing + processing time
++                _PROC_LOG.write(f"{payload['device_id']},{payload['seq']},{t_rx or t_start:.6f},{t_start:.6f},{time.time():.6f}\n")
+             if not result["ok"]:
+                 self.messages_rejected += 1
+                 if result["error"] == "quarantined":

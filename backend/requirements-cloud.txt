@@ -1,0 +1,3 @@
+# v1.3: extra packages for the cloud version (PostgreSQL, e.g. Huawei Cloud RDS for PostgreSQL)
+-r requirements.txt
+psycopg[binary]>=3.2

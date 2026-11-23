@@ -1,0 +1,11 @@
+# CyberShield SatCom 3D - backend dependencies
+# Phase 1: web server
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30
+python-dotenv>=1.0
+# Phase 2: database
+sqlalchemy>=2.0
+# Phase 3: MQTT
+paho-mqtt>=2.0
+# v1.1: AI assistant (calls a free LLM API)
+httpx>=0.27

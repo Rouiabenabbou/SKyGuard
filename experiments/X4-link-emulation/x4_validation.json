@@ -1,0 +1,98 @@
+[
+ {
+  "profile": "5G-like",
+  "cfg": {
+   "delay_ms": 12,
+   "jitter_ms": 3,
+   "loss": 0.001
+  },
+  "sent": 3000,
+  "recv": 2997,
+  "loss_meas": 0.001,
+  "mean_ms": 12.43,
+  "sd_ms": 3.08,
+  "p50_ms": 12.45,
+  "mean_burst": 1
+ },
+ {
+  "profile": "LEO-like",
+  "cfg": {
+   "delay_ms": 35,
+   "jitter_ms": 6,
+   "loss": 0.003
+  },
+  "sent": 3000,
+  "recv": 2987,
+  "loss_meas": 0.0043,
+  "mean_ms": 35.42,
+  "sd_ms": 6.03,
+  "p50_ms": 35.33,
+  "mean_burst": 1
+ },
+ {
+  "profile": "GEO-like",
+  "cfg": {
+   "delay_ms": 280,
+   "jitter_ms": 0,
+   "loss": 0.0
+  },
+  "sent": 3000,
+  "recv": 3000,
+  "loss_meas": 0.0,
+  "mean_ms": 280.43,
+  "sd_ms": 0.28,
+  "p50_ms": 280.4,
+  "mean_burst": 0
+ },
+ {
+  "profile": "Lossy-5%",
+  "cfg": {
+   "delay_ms": 35,
+   "jitter_ms": 6,
+   "loss": 0.05
+  },
+  "sent": 3000,
+  "recv": 2822,
+  "loss_meas": 0.0593,
+  "mean_ms": 35.58,
+  "sd_ms": 6.01,
+  "p50_ms": 35.7,
+  "mean_burst": 1.05
+ },
+ {
+  "profile": "Burst-5%",
+  "cfg": {
+   "delay_ms": 35,
+   "jitter_ms": 6,
+   "loss": 0.0,
+   "ge": {
+    "p_gb": 0.010526315789473687,
+    "p_bg": 0.2
+   }
+  },
+  "sent": 3000,
+  "recv": 2839,
+  "loss_meas": 0.0537,
+  "mean_ms": 35.58,
+  "sd_ms": 6.1,
+  "p50_ms": 35.61,
+  "mean_burst": 4.6
+ },
+ {
+  "profile": "LEO-64k",
+  "cfg": {
+   "delay_ms": 35,
+   "jitter_ms": 6,
+   "loss": 0.003,
+   "rate_kbps": 64,
+   "qmax_ms": 2000
+  },
+  "sent": 3000,
+  "recv": 2991,
+  "loss_meas": 0.003,
+  "mean_ms": 51.21,
+  "sd_ms": 6.01,
+  "p50_ms": 50.91,
+  "mean_burst": 1
+ }
+]

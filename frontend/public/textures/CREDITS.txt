@@ -1,0 +1,3 @@
+earth-blue-marble.jpg, earth-topology.png, earth-water.png
+Source imagery: NASA Visible Earth "Blue Marble" (public domain), as packaged in
+the three-globe npm package (MIT licence, (c) 2019 Vasco Asturiano).

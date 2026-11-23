@@ -1,0 +1,439 @@
+{
+ "unaware": {
+  "hours": 1.3347483333614139,
+  "device_hours": 34.70345666739676,
+  "alerts": 262,
+  "fp": 87,
+  "fp_per_dev_h": 2.5069548786975697,
+  "fp_by_ctx_type": {
+   "post-outage|excessive_message_rate": 86,
+   "normal|excessive_message_rate": 1
+  },
+  "recall": {
+   "connstorm": [
+    17,
+    18,
+    0.7424220019799247,
+    0.9901250641690756
+   ],
+   "flood": [
+    33,
+    35,
+    0.8139261926062996,
+    0.984187170385956
+   ],
+   "distributed": [
+    1,
+    11,
+    0.01623175226282597,
+    0.3773646254862038
+   ],
+   "flood(conc)": [
+    12,
+    12,
+    0.7574992425007574,
+    1.0
+   ],
+   "abnormal(conc)": [
+    12,
+    12,
+    0.7574992425007574,
+    1.0
+   ],
+   "connstorm(conc)": [
+    12,
+    12,
+    0.7574992425007574,
+    1.0
+   ],
+   "abnormal": [
+    8,
+    8,
+    0.6755843804891231,
+    1.0
+   ],
+   "forged": [
+    20,
+    20,
+    0.8388698745050667,
+    1.0
+   ],
+   "lowslow": [
+    1,
+    12,
+    0.014864709450773478,
+    0.35388592179859524
+   ]
+  },
+  "recall_by_ctx": {
+   "connstorm|normal": [
+    8,
+    9
+   ],
+   "flood|outage": [
+    14,
+    14
+   ],
+   "distributed|outage": [
+    1,
+    2
+   ],
+   "flood|recovery": [
+    1,
+    3
+   ],
+   "flood|normal": [
+    13,
+    13
+   ],
+   "abnormal|normal": [
+    5,
+    5
+   ],
+   "forged|random": [
+    2,
+    2
+   ],
+   "flood|random": [
+    3,
+    3
+   ],
+   "abnormal|random": [
+    1,
+    1
+   ],
+   "connstorm|random": [
+    3,
+    3
+   ],
+   "distributed|normal": [
+    0,
+    5
+   ],
+   "distributed|flap": [
+    0,
+    1
+   ],
+   "forged|flap": [
+    2,
+    2
+   ],
+   "flood|flap": [
+    3,
+    3
+   ],
+   "abnormal|flap": [
+    1,
+    1
+   ],
+   "abnormal|outage": [
+    7,
+    7
+   ],
+   "connstorm|outage": [
+    9,
+    9
+   ],
+   "lowslow|outage": [
+    1,
+    3
+   ],
+   "lowslow|normal": [
+    0,
+    4
+   ],
+   "forged|outage": [
+    5,
+    5
+   ],
+   "forged|normal": [
+    5,
+    5
+   ],
+   "flood|burst": [
+    7,
+    7
+   ],
+   "abnormal|burst": [
+    5,
+    5
+   ],
+   "connstorm|burst": [
+    5,
+    5
+   ],
+   "lowslow|burst": [
+    0,
+    2
+   ],
+   "distributed|burst": [
+    0,
+    1
+   ],
+   "forged|burst": [
+    1,
+    1
+   ],
+   "flood|geo": [
+    4,
+    4
+   ],
+   "distributed|geo": [
+    0,
+    2
+   ],
+   "lowslow|geo": [
+    0,
+    3
+   ],
+   "abnormal|geo": [
+    1,
+    1
+   ],
+   "forged|geo": [
+    3,
+    3
+   ],
+   "connstorm|geo": [
+    2,
+    2
+   ],
+   "connstorm|recovery": [
+    2,
+    2
+   ],
+   "forged|recovery": [
+    2,
+    2
+   ]
+  },
+  "ttd_median": {
+   "connstorm": 6.516233205795288,
+   "flood": 2.465301990509033,
+   "flood(conc)": 2.4698615074157715,
+   "abnormal(conc)": 0.011124491691589355,
+   "connstorm(conc)": 6.518625020980835,
+   "distributed": 8.627543926239014,
+   "abnormal": 0.006311535835266113,
+   "forged": 2.466115951538086,
+   "lowslow": 22.804446935653687
+  }
+ },
+ "aware": {
+  "hours": 1.3347483333614139,
+  "device_hours": 34.70345666739676,
+  "alerts": 164,
+  "fp": 4,
+  "fp_per_dev_h": 0.11526229327345147,
+  "fp_by_ctx_type": {
+   "post-outage|excessive_message_rate": 4
+  },
+  "recall": {
+   "connstorm": [
+    17,
+    18,
+    0.7424220019799247,
+    0.9901250641690756
+   ],
+   "flood": [
+    28,
+    35,
+    0.6410806339053748,
+    0.899576805540992
+   ],
+   "distributed": [
+    0,
+    11,
+    2.7755575615628914e-17,
+    0.2588400172488141
+   ],
+   "flood(conc)": [
+    11,
+    12,
+    0.6461140782014047,
+    0.9851352905492264
+   ],
+   "abnormal(conc)": [
+    12,
+    12,
+    0.7574992425007574,
+    1.0
+   ],
+   "connstorm(conc)": [
+    12,
+    12,
+    0.7574992425007574,
+    1.0
+   ],
+   "abnormal": [
+    8,
+    8,
+    0.6755843804891231,
+    1.0
+   ],
+   "forged": [
+    16,
+    20,
+    0.5839782779742401,
+    0.9193436467288
+   ],
+   "lowslow": [
+    0,
+    12,
+    0.0,
+    0.2425007574992425
+   ]
+  },
+  "recall_by_ctx": {
+   "connstorm|normal": [
+    8,
+    9
+   ],
+   "flood|outage": [
+    6,
+    14
+   ],
+   "distributed|outage": [
+    0,
+    2
+   ],
+   "flood|recovery": [
+    3,
+    3
+   ],
+   "flood|normal": [
+    13,
+    13
+   ],
+   "abnormal|normal": [
+    5,
+    5
+   ],
+   "forged|random": [
+    2,
+    2
+   ],
+   "flood|random": [
+    3,
+    3
+   ],
+   "abnormal|random": [
+    1,
+    1
+   ],
+   "connstorm|random": [
+    3,
+    3
+   ],
+   "distributed|normal": [
+    0,
+    5
+   ],
+   "distributed|flap": [
+    0,
+    1
+   ],
+   "forged|flap": [
+    2,
+    2
+   ],
+   "flood|flap": [
+    3,
+    3
+   ],
+   "abnormal|flap": [
+    1,
+    1
+   ],
+   "abnormal|outage": [
+    7,
+    7
+   ],
+   "connstorm|outage": [
+    9,
+    9
+   ],
+   "lowslow|outage": [
+    0,
+    3
+   ],
+   "lowslow|normal": [
+    0,
+    4
+   ],
+   "forged|outage": [
+    4,
+    5
+   ],
+   "forged|normal": [
+    4,
+    5
+   ],
+   "flood|burst": [
+    7,
+    7
+   ],
+   "abnormal|burst": [
+    5,
+    5
+   ],
+   "connstorm|burst": [
+    5,
+    5
+   ],
+   "lowslow|burst": [
+    0,
+    2
+   ],
+   "distributed|burst": [
+    0,
+    1
+   ],
+   "forged|burst": [
+    1,
+    1
+   ],
+   "flood|geo": [
+    4,
+    4
+   ],
+   "distributed|geo": [
+    0,
+    2
+   ],
+   "lowslow|geo": [
+    0,
+    3
+   ],
+   "abnormal|geo": [
+    1,
+    1
+   ],
+   "forged|geo": [
+    3,
+    3
+   ],
+   "connstorm|geo": [
+    2,
+    2
+   ],
+   "connstorm|recovery": [
+    2,
+    2
+   ],
+   "forged|recovery": [
+    0,
+    2
+   ]
+  },
+  "ttd_median": {
+   "connstorm": 6.516322135925293,
+   "flood": 2.4649295806884766,
+   "flood(conc)": 2.469641923904419,
+   "abnormal(conc)": 0.011114001274108887,
+   "connstorm(conc)": 6.518509030342102,
+   "abnormal": 0.006711006164550781,
+   "forged": 2.9458465576171875
+  }
+ }
+}

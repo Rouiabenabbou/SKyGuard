@@ -1,0 +1,2308 @@
+{
+ "A": {
+  "10": {
+   "off": {
+    "interruption": {
+     "n": 10,
+     "median": 19.131500005722046,
+     "ci": [
+      14.648000001907349,
+      19.236999988555908
+     ],
+     "mean": 17.32079999446869,
+     "sd": 3.7635801083599065
+    },
+    "max_delay": {
+     "n": 10,
+     "median": 18.16600000858307,
+     "ci": [
+      13.692500114440918,
+      18.2775000333786
+     ],
+     "mean": 16.363700032234192,
+     "sd": 3.7587645753607344
+    },
+    "lost": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "dup": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "ooo": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "failbacks": 0,
+    "runs": 10
+   },
+   "reconnect": {
+    "detect": {
+     "n": 10,
+     "median": 8.627881526947021,
+     "ci": [
+      6.421308279037476,
+      10.335739135742188
+     ],
+     "mean": 8.399694108963013,
+     "sd": 2.046781791555106
+    },
+    "interruption": {
+     "n": 10,
+     "median": 9.183500051498413,
+     "ci": [
+      7.034000039100647,
+      10.680999994277954
+     ],
+     "mean": 8.84850001335144,
+     "sd": 1.9671276566370615
+    },
+    "max_delay": {
+     "n": 10,
+     "median": 8.22350013256073,
+     "ci": [
+      6.070500016212463,
+      9.708000183105469
+     ],
+     "mean": 7.881100058555603,
+     "sd": 1.9682584783415888
+    },
+    "lost": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "dup": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.1,
+     "sd": 0.31622776601683794
+    },
+    "ooo": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "failbacks": 0,
+    "runs": 10
+   },
+   "fixed": {
+    "detect": {
+     "n": 10,
+     "median": 2.5984175205230713,
+     "ci": [
+      2.3486651182174683,
+      2.8322577476501465
+     ],
+     "mean": 2.605094146728516,
+     "sd": 0.3088011423823223
+    },
+    "interruption": {
+     "n": 10,
+     "median": 3.05649995803833,
+     "ci": [
+      3.034999966621399,
+      3.0605000257492065
+     ],
+     "mean": 3.0496999979019166,
+     "sd": 0.016021174871331895
+    },
+    "max_delay": {
+     "n": 10,
+     "median": 2.0880000591278076,
+     "ci": [
+      2.0794999599456787,
+      2.0899999141693115
+     ],
+     "mean": 2.08510000705719,
+     "sd": 0.006590382047095985
+    },
+    "lost": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "dup": {
+     "n": 10,
+     "median": 3.0,
+     "ci": [
+      3.0,
+      3.0
+     ],
+     "mean": 3,
+     "sd": 0.0
+    },
+    "ooo": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "failback_gap": {
+     "n": 10,
+     "median": 2.069999933242798,
+     "ci": [
+      2.0649999380111694,
+      2.0749999284744263
+     ],
+     "mean": 2.0706999778747557,
+     "sd": 0.006325495358236946
+    },
+    "failbacks": 10,
+    "runs": 10
+   },
+   "rtt": {
+    "detect": {
+     "n": 10,
+     "median": 1.743395447731018,
+     "ci": [
+      1.3316650390625,
+      1.8252575397491455
+     ],
+     "mean": 1.6214940786361693,
+     "sd": 0.32033059966169525
+    },
+    "interruption": {
+     "n": 10,
+     "median": 2.07099986076355,
+     "ci": [
+      2.062000036239624,
+      2.075500011444092
+     ],
+     "mean": 2.069800019264221,
+     "sd": 0.008093825897742862
+    },
+    "max_delay": {
+     "n": 10,
+     "median": 1.0784999132156372,
+     "ci": [
+      1.0749998092651367,
+      1.0820001363754272
+     ],
+     "mean": 1.0780999898910522,
+     "sd": 0.005258913574212001
+    },
+    "lost": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "dup": {
+     "n": 10,
+     "median": 2.0,
+     "ci": [
+      2.0,
+      2.0
+     ],
+     "mean": 2,
+     "sd": 0.0
+    },
+    "ooo": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "failback_gap": {
+     "n": 10,
+     "median": 2.07099986076355,
+     "ci": [
+      2.062000036239624,
+      2.075500011444092
+     ],
+     "mean": 2.069800019264221,
+     "sd": 0.008093825897742862
+    },
+    "failbacks": 10,
+    "runs": 10
+   },
+   "tests": {
+    "off-fixed": {
+     "n": 10,
+     "W": 0.0,
+     "p": 0.001953125,
+     "median_diff": 16.078500032424927,
+     "rank_biserial_sign": 1.0
+    },
+    "reconnect-fixed": {
+     "n": 10,
+     "W": 0.0,
+     "p": 0.001953125,
+     "median_diff": 6.135500073432922,
+     "rank_biserial_sign": 1.0
+    },
+    "fixed-rtt": {
+     "n": 10,
+     "W": 0.0,
+     "p": 0.001953125,
+     "median_diff": 0.9750000238418579,
+     "rank_biserial_sign": 1.0
+    },
+    "off-reconnect": {
+     "n": 10,
+     "W": 3.0,
+     "p": 0.009765625,
+     "median_diff": 9.92550003528595,
+     "rank_biserial_sign": 0.6
+    }
+   }
+  },
+  "30": {
+   "off": {
+    "interruption": {
+     "n": 10,
+     "median": 38.15849995613098,
+     "ci": [
+      37.175999879837036,
+      38.58399987220764
+     ],
+     "mean": 37.89669995307922,
+     "sd": 0.9059531980111163
+    },
+    "max_delay": {
+     "n": 10,
+     "median": 37.18649995326996,
+     "ci": [
+      36.22499990463257,
+      37.61500000953674
+     ],
+     "mean": 36.926799988746644,
+     "sd": 0.8990252292544678
+    },
+    "lost": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "dup": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "ooo": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "failbacks": 0,
+    "runs": 10
+   },
+   "reconnect": {
+    "detect": {
+     "n": 10,
+     "median": 9.642194151878357,
+     "ci": [
+      5.941666126251221,
+      11.031208395957947
+     ],
+     "mean": 8.730020189285279,
+     "sd": 2.407648502545098
+    },
+    "interruption": {
+     "n": 10,
+     "median": 10.05299997329712,
+     "ci": [
+      6.065999984741211,
+      11.539999961853027
+     ],
+     "mean": 9.1492999792099,
+     "sd": 2.548308204103689
+    },
+    "max_delay": {
+     "n": 10,
+     "median": 9.109500050544739,
+     "ci": [
+      5.0959999561309814,
+      10.57449996471405
+     ],
+     "mean": 8.19040002822876,
+     "sd": 2.552752257615987
+    },
+    "lost": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "dup": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "ooo": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "failbacks": 0,
+    "runs": 10
+   },
+   "fixed": {
+    "detect": {
+     "n": 10,
+     "median": 2.6263887882232666,
+     "ci": [
+      2.3799781799316406,
+      2.8137054443359375
+     ],
+     "mean": 2.6200201749801635,
+     "sd": 0.23766962161381922
+    },
+    "interruption": {
+     "n": 10,
+     "median": 3.0404999256134033,
+     "ci": [
+      3.0360000133514404,
+      3.052999973297119
+     ],
+     "mean": 3.0440999984741213,
+     "sd": 0.010246399149667296
+    },
+    "max_delay": {
+     "n": 10,
+     "median": 2.0859999656677246,
+     "ci": [
+      2.0825001001358032,
+      2.087499976158142
+     ],
+     "mean": 2.083899998664856,
+     "sd": 0.006935396868065963
+    },
+    "lost": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "dup": {
+     "n": 10,
+     "median": 3.0,
+     "ci": [
+      2.0,
+      3.0
+     ],
+     "mean": 2.6,
+     "sd": 0.8432740427115678
+    },
+    "ooo": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "failback_gap": {
+     "n": 10,
+     "median": 2.075500011444092,
+     "ci": [
+      2.072999954223633,
+      2.083500027656555
+     ],
+     "mean": 2.1146000623703003,
+     "sd": 0.12435544367328465
+    },
+    "failbacks": 10,
+    "runs": 10
+   },
+   "rtt": {
+    "detect": {
+     "n": 10,
+     "median": 1.6338887214660645,
+     "ci": [
+      1.3729782104492188,
+      1.8312053680419922
+     ],
+     "mean": 1.6180201768875122,
+     "sd": 0.24143079314054325
+    },
+    "interruption": {
+     "n": 10,
+     "median": 2.071500062942505,
+     "ci": [
+      2.061000108718872,
+      2.1964999437332153
+     ],
+     "mean": 2.131600022315979,
+     "sd": 0.1383322410454929
+    },
+    "max_delay": {
+     "n": 10,
+     "median": 1.0789999961853027,
+     "ci": [
+      1.0739998817443848,
+      1.0870001316070557
+     ],
+     "mean": 1.082599973678589,
+     "sd": 0.013761482706394339
+    },
+    "lost": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "dup": {
+     "n": 10,
+     "median": 2.0,
+     "ci": [
+      2.0,
+      2.0
+     ],
+     "mean": 2,
+     "sd": 0.0
+    },
+    "ooo": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "failback_gap": {
+     "n": 10,
+     "median": 2.069000005722046,
+     "ci": [
+      2.061000108718872,
+      2.1920000314712524
+     ],
+     "mean": 2.129900026321411,
+     "sd": 0.1390438698979705
+    },
+    "failbacks": 10,
+    "runs": 10
+   },
+   "tests": {
+    "off-fixed": {
+     "n": 10,
+     "W": 0.0,
+     "p": 0.001953125,
+     "median_diff": 35.12249994277954,
+     "rank_biserial_sign": 1.0
+    },
+    "reconnect-fixed": {
+     "n": 10,
+     "W": 0.0,
+     "p": 0.001953125,
+     "median_diff": 6.997500061988831,
+     "rank_biserial_sign": 1.0
+    },
+    "fixed-rtt": {
+     "n": 10,
+     "W": 0.0,
+     "p": 0.001953125,
+     "median_diff": 0.9714999198913574,
+     "rank_biserial_sign": 1.0
+    },
+    "off-reconnect": {
+     "n": 10,
+     "W": 0.0,
+     "p": 0.001953125,
+     "median_diff": 27.12249994277954,
+     "rank_biserial_sign": 1.0
+    }
+   }
+  },
+  "120": {
+   "off": {
+    "interruption": {
+     "n": 10,
+     "median": 130.2130000591278,
+     "ci": [
+      130.19250011444092,
+      130.71049988269806
+     ],
+     "mean": 130.40460000038146,
+     "sd": 0.4187783910311583
+    },
+    "max_delay": {
+     "n": 10,
+     "median": 129.2519999742508,
+     "ci": [
+      129.23399996757507,
+      129.739000082016
+     ],
+     "mean": 129.44219999313356,
+     "sd": 0.41968444449615455
+    },
+    "lost": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "dup": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "ooo": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "failbacks": 0,
+    "runs": 10
+   },
+   "reconnect": {
+    "detect": {
+     "n": 10,
+     "median": 6.180190682411194,
+     "ci": [
+      5.679452896118164,
+      8.312664985656738
+     ],
+     "mean": 6.873236584663391,
+     "sd": 1.9384277501359735
+    },
+    "interruption": {
+     "n": 10,
+     "median": 7.0355000495910645,
+     "ci": [
+      6.055000066757202,
+      9.034500002861023
+     ],
+     "mean": 7.4426000118255615,
+     "sd": 1.9525629789265448
+    },
+    "max_delay": {
+     "n": 10,
+     "median": 6.075500011444092,
+     "ci": [
+      5.0940001010894775,
+      8.085999965667725
+     ],
+     "mean": 6.487199997901916,
+     "sd": 1.952975943032968
+    },
+    "lost": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "dup": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "ooo": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "failbacks": 0,
+    "runs": 10
+   },
+   "fixed": {
+    "detect": {
+     "n": 10,
+     "median": 2.456977128982544,
+     "ci": [
+      2.2538501024246216,
+      2.6354527473449707
+     ],
+     "mean": 2.4650365352630614,
+     "sd": 0.23887696793746652
+    },
+    "interruption": {
+     "n": 10,
+     "median": 3.041499972343445,
+     "ci": [
+      3.0269999504089355,
+      3.057000160217285
+     ],
+     "mean": 3.0416000127792358,
+     "sd": 0.017939465156090725
+    },
+    "max_delay": {
+     "n": 10,
+     "median": 2.0885000228881836,
+     "ci": [
+      2.0779998302459717,
+      2.0910000801086426
+     ],
+     "mean": 2.08510000705719,
+     "sd": 0.008749024737742842
+    },
+    "lost": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "dup": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "ooo": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "failback_gap": {
+     "n": 10,
+     "median": 2.0749999284744263,
+     "ci": [
+      2.067999839782715,
+      2.078999876976013
+     ],
+     "mean": 2.10959997177124,
+     "sd": 0.11729662187121252
+    },
+    "failbacks": 10,
+    "runs": 10
+   },
+   "rtt": {
+    "detect": {
+     "n": 10,
+     "median": 1.4729770421981812,
+     "ci": [
+      1.272089958190918,
+      1.6332488059997559
+     ],
+     "mean": 1.4712365388870239,
+     "sd": 0.23746915354355194
+    },
+    "interruption": {
+     "n": 10,
+     "median": 2.069499969482422,
+     "ci": [
+      2.067000150680542,
+      2.078000068664551
+     ],
+     "mean": 2.0720000505447387,
+     "sd": 0.006110121980707816
+    },
+    "max_delay": {
+     "n": 10,
+     "median": 1.0769999027252197,
+     "ci": [
+      1.0755000114440918,
+      1.0789999961853027
+     ],
+     "mean": 1.077500009536743,
+     "sd": 0.00397909002678932
+    },
+    "lost": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "dup": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "ooo": {
+     "n": 10,
+     "median": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "mean": 0,
+     "sd": 0.0
+    },
+    "failback_gap": {
+     "n": 10,
+     "median": 2.069499969482422,
+     "ci": [
+      2.067000150680542,
+      2.078000068664551
+     ],
+     "mean": 2.0720000505447387,
+     "sd": 0.006110121980707816
+    },
+    "failbacks": 10,
+    "runs": 10
+   },
+   "tests": {
+    "off-fixed": {
+     "n": 10,
+     "W": 0.0,
+     "p": 0.001953125,
+     "median_diff": 127.16600000858307,
+     "rank_biserial_sign": 1.0
+    },
+    "reconnect-fixed": {
+     "n": 10,
+     "W": 0.0,
+     "p": 0.001953125,
+     "median_diff": 3.998500108718872,
+     "rank_biserial_sign": 1.0
+    },
+    "fixed-rtt": {
+     "n": 10,
+     "W": 0.0,
+     "p": 0.001953125,
+     "median_diff": 0.968500018119812,
+     "rank_biserial_sign": 1.0
+    },
+    "off-reconnect": {
+     "n": 10,
+     "W": 0.0,
+     "p": 0.001953125,
+     "median_diff": 124.13150012493134,
+     "rank_biserial_sign": 1.0
+    }
+   }
+  }
+ },
+ "B": {
+  "leo-burst|off": {
+   "false_failovers": 0,
+   "per_hour": 0.0,
+   "dup": 0,
+   "lost": 0,
+   "ooo": 0
+  },
+  "leo-burst|reconnect": {
+   "false_failovers": 0,
+   "per_hour": 0.0,
+   "dup": 0,
+   "lost": 0,
+   "ooo": 0
+  },
+  "leo-burst|fixed": {
+   "false_failovers": 1,
+   "per_hour": 5.916393202240793,
+   "dup": 3,
+   "lost": 0,
+   "ooo": 0
+  },
+  "leo-burst|rtt": {
+   "false_failovers": 3,
+   "per_hour": 17.749179606722382,
+   "dup": 6,
+   "lost": 0,
+   "ooo": 0
+  },
+  "geo-burst|off": {
+   "false_failovers": 0,
+   "per_hour": 0.0,
+   "dup": 0,
+   "lost": 0,
+   "ooo": 0
+  },
+  "geo-burst|reconnect": {
+   "false_failovers": 1,
+   "per_hour": 5.907880248212462,
+   "dup": 0,
+   "lost": 0,
+   "ooo": 0
+  },
+  "geo-burst|fixed": {
+   "false_failovers": 12,
+   "per_hour": 70.89456297854953,
+   "dup": 45,
+   "lost": 0,
+   "ooo": 0
+  },
+  "geo-burst|rtt": {
+   "false_failovers": 6,
+   "per_hour": 35.447281489274765,
+   "dup": 20,
+   "lost": 0,
+   "ooo": 0
+  }
+ },
+ "raw": {
+  "120": {
+   "off": {
+    "8": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 130.20299983024597,
+     "max_delay": 129.22899985313416,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "4": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 130.20000004768372,
+     "max_delay": 129.25300002098083,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "1": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 131.19799995422363,
+     "max_delay": 130.22300004959106,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "9": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 130.22299981117249,
+     "max_delay": 129.25099992752075,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "2": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 130.2350001335144,
+     "max_delay": 129.26200008392334,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "7": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 131.19899988174438,
+     "max_delay": 130.25299978256226,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "0": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 130.18100023269653,
+     "max_delay": 129.239000082016,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "6": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 130.2039999961853,
+     "max_delay": 129.239000082016,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "3": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 130.2220001220703,
+     "max_delay": 129.25500011444092,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "5": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 130.18099999427795,
+     "max_delay": 129.21799993515015,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    }
+   },
+   "reconnect": {
+    "8": {
+     "detect": 10.60104489326477,
+     "early_switch": false,
+     "interruption": 11.05299997329712,
+     "max_delay": 10.086999893188477,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "4": {
+     "detect": 5.679452896118164,
+     "early_switch": false,
+     "interruption": 6.039000034332275,
+     "max_delay": 5.0940001010894775,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "1": {
+     "detect": 6.2226104736328125,
+     "early_switch": false,
+     "interruption": 7.039000034332275,
+     "max_delay": 6.0899999141693115,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "9": {
+     "detect": 6.272420883178711,
+     "early_switch": false,
+     "interruption": 7.04200005531311,
+     "max_delay": 6.085000038146973,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "2": {
+     "detect": 10.352909088134766,
+     "early_switch": false,
+     "interruption": 11.026999950408936,
+     "max_delay": 10.083999872207642,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "7": {
+     "detect": 6.137770891189575,
+     "early_switch": false,
+     "interruption": 7.0350000858306885,
+     "max_delay": 6.088000059127808,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "0": {
+     "detect": 5.3070900440216064,
+     "early_switch": false,
+     "interruption": 6.066999912261963,
+     "max_delay": 5.096999883651733,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "6": {
+     "detect": 5.625382423400879,
+     "early_switch": false,
+     "interruption": 6.055000066757202,
+     "max_delay": 5.090000152587891,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "3": {
+     "detect": 5.868635416030884,
+     "early_switch": false,
+     "interruption": 6.0329999923706055,
+     "max_delay": 5.091000080108643,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "5": {
+     "detect": 6.665048837661743,
+     "early_switch": false,
+     "interruption": 7.03600001335144,
+     "max_delay": 6.065999984741211,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    }
+   },
+   "fixed": {
+    "8": {
+     "detect": 2.567044973373413,
+     "early_switch": false,
+     "interruption": 3.0399999618530273,
+     "max_delay": 2.0779998302459717,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.065999984741211,
+     "failback": true
+    },
+    "4": {
+     "detect": 2.6354527473449707,
+     "early_switch": false,
+     "interruption": 3.065999984741211,
+     "max_delay": 2.0910000801086426,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.0749998092651367,
+     "failback": true
+    },
+    "1": {
+     "detect": 2.2076103687286377,
+     "early_switch": false,
+     "interruption": 3.0429999828338623,
+     "max_delay": 2.0920000076293945,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.0759999752044678,
+     "failback": true
+    },
+    "9": {
+     "detect": 2.2854206562042236,
+     "early_switch": false,
+     "interruption": 3.0360000133514404,
+     "max_delay": 2.0899999141693115,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.072000026702881,
+     "failback": true
+    },
+    "2": {
+     "detect": 2.346909284591675,
+     "early_switch": false,
+     "interruption": 3.0139999389648438,
+     "max_delay": 2.065999984741211,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.067999839782715,
+     "failback": true
+    },
+    "7": {
+     "detect": 2.143770694732666,
+     "early_switch": false,
+     "interruption": 3.0339999198913574,
+     "max_delay": 2.0859999656677246,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.0759999752044678,
+     "failback": true
+    },
+    "0": {
+     "detect": 2.3000898361206055,
+     "early_switch": false,
+     "interruption": 3.052000045776367,
+     "max_delay": 2.0910000801086426,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.062000036239624,
+     "failback": true
+    },
+    "6": {
+     "detect": 2.6353824138641357,
+     "early_switch": false,
+     "interruption": 3.06000018119812,
+     "max_delay": 2.0930001735687256,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.0829999446868896,
+     "failback": true
+    },
+    "3": {
+     "detect": 2.8716354370117188,
+     "early_switch": false,
+     "interruption": 3.057000160217285,
+     "max_delay": 2.0870001316070557,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.443000078201294,
+     "failback": true
+    },
+    "5": {
+     "detect": 2.6570489406585693,
+     "early_switch": false,
+     "interruption": 3.0139999389648438,
+     "max_delay": 2.0769999027252197,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.075000047683716,
+     "failback": true
+    }
+   },
+   "rtt": {
+    "8": {
+     "detect": 1.5790448188781738,
+     "early_switch": false,
+     "interruption": 2.069999933242798,
+     "max_delay": 1.0780000686645508,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.069999933242798,
+     "failback": true
+    },
+    "4": {
+     "detect": 1.687452793121338,
+     "early_switch": false,
+     "interruption": 2.065999984741211,
+     "max_delay": 1.0740001201629639,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.065999984741211,
+     "failback": true
+    },
+    "1": {
+     "detect": 1.2176103591918945,
+     "early_switch": false,
+     "interruption": 2.080000162124634,
+     "max_delay": 1.0810000896453857,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.080000162124634,
+     "failback": true
+    },
+    "9": {
+     "detect": 1.333420753479004,
+     "early_switch": false,
+     "interruption": 2.069000005722046,
+     "max_delay": 1.0769999027252197,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.069000005722046,
+     "failback": true
+    },
+    "2": {
+     "detect": 1.3669092655181885,
+     "early_switch": false,
+     "interruption": 2.065000057220459,
+     "max_delay": 1.071000099182129,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.065000057220459,
+     "failback": true
+    },
+    "7": {
+     "detect": 1.1377708911895752,
+     "early_switch": false,
+     "interruption": 2.078000068664551,
+     "max_delay": 1.0759999752044678,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.078000068664551,
+     "failback": true
+    },
+    "0": {
+     "detect": 1.272089958190918,
+     "early_switch": false,
+     "interruption": 2.067000150680542,
+     "max_delay": 1.0859999656677246,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.067000150680542,
+     "failback": true
+    },
+    "6": {
+     "detect": 1.622382402420044,
+     "early_switch": false,
+     "interruption": 2.0810000896453857,
+     "max_delay": 1.0780000686645508,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.0810000896453857,
+     "failback": true
+    },
+    "3": {
+     "detect": 1.8666353225708008,
+     "early_switch": false,
+     "interruption": 2.0759999752044678,
+     "max_delay": 1.0769999027252197,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.0759999752044678,
+     "failback": true
+    },
+    "5": {
+     "detect": 1.6290488243103027,
+     "early_switch": false,
+     "interruption": 2.068000078201294,
+     "max_delay": 1.0769999027252197,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": 2.068000078201294,
+     "failback": true
+    }
+   }
+  },
+  "10": {
+   "off": {
+    "7": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 19.20799994468689,
+     "max_delay": 18.253999948501587,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "3": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 19.182999849319458,
+     "max_delay": 18.21299982070923,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "2": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 19.080000162124634,
+     "max_delay": 18.112000226974487,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "4": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 19.578999996185303,
+     "max_delay": 18.617000102996826,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "9": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 10.20799994468689,
+     "max_delay": 9.260999917984009,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "1": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 19.068000078201294,
+     "max_delay": 18.11900019645691,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "0": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 19.236999988555908,
+     "max_delay": 18.26699995994568,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "8": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 18.177000045776367,
+     "max_delay": 17.22699999809265,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "5": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 10.215999841690063,
+     "max_delay": 9.266000032424927,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "6": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 19.252000093460083,
+     "max_delay": 18.301000118255615,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    }
+   },
+   "reconnect": {
+    "7": {
+     "detect": 6.199605464935303,
+     "early_switch": false,
+     "interruption": 7.0309998989105225,
+     "max_delay": 6.063999891281128,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "3": {
+     "detect": 10.476724624633789,
+     "early_switch": false,
+     "interruption": 11.042999982833862,
+     "max_delay": 10.07200002670288,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "2": {
+     "detect": 5.547824144363403,
+     "early_switch": false,
+     "interruption": 6.055999994277954,
+     "max_delay": 5.085999965667725,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "4": {
+     "detect": 10.187782287597656,
+     "early_switch": false,
+     "interruption": 10.842000007629395,
+     "max_delay": 9.883000135421753,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "9": {
+     "detect": 10.144257545471191,
+     "early_switch": false,
+     "interruption": 10.365000009536743,
+     "max_delay": 9.388000011444092,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "1": {
+     "detect": 10.423779726028442,
+     "early_switch": false,
+     "interruption": 10.680999994277954,
+     "max_delay": 9.708000183105469,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "0": {
+     "detect": 7.111505508422852,
+     "early_switch": false,
+     "interruption": 8.04699993133545,
+     "max_delay": 7.078000068664551,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "8": {
+     "detect": 7.014752149581909,
+     "early_switch": false,
+     "interruption": 7.062999963760376,
+     "max_delay": 6.085999965667725,
+     "lost": 0,
+     "dup": 1,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "5": {
+     "detect": 10.247698545455933,
+     "early_switch": false,
+     "interruption": 10.320000171661377,
+     "max_delay": 9.36900019645691,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "6": {
+     "detect": 6.643011093139648,
+     "early_switch": false,
+     "interruption": 7.0370001792907715,
+     "max_delay": 6.077000141143799,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    }
+   },
+   "fixed": {
+    "7": {
+     "detect": 2.200605630874634,
+     "early_switch": false,
+     "interruption": 3.0230000019073486,
+     "max_delay": 2.072000026702881,
+     "lost": 0,
+     "dup": 3,
+     "ooo": 0,
+     "failback_gap": 2.072000026702881,
+     "failback": true
+    },
+    "3": {
+     "detect": 2.4967246055603027,
+     "early_switch": false,
+     "interruption": 3.062999963760376,
+     "max_delay": 2.0889999866485596,
+     "lost": 0,
+     "dup": 3,
+     "ooo": 0,
+     "failback_gap": 2.0830001831054688,
+     "failback": true
+    },
+    "2": {
+     "detect": 2.505824089050293,
+     "early_switch": false,
+     "interruption": 3.0429999828338623,
+     "max_delay": 2.075000047683716,
+     "lost": 0,
+     "dup": 3,
+     "ooo": 0,
+     "failback_gap": 2.065000057220459,
+     "failback": true
+    },
+    "4": {
+     "detect": 2.4207823276519775,
+     "early_switch": false,
+     "interruption": 3.072000026702881,
+     "max_delay": 2.0899999141693115,
+     "lost": 0,
+     "dup": 3,
+     "ooo": 0,
+     "failback_gap": 2.06499981880188,
+     "failback": true
+    },
+    "9": {
+     "detect": 2.8322577476501465,
+     "early_switch": false,
+     "interruption": 3.0269999504089355,
+     "max_delay": 2.0840001106262207,
+     "lost": 0,
+     "dup": 3,
+     "ooo": 0,
+     "failback_gap": 2.072999954223633,
+     "failback": true
+    },
+    "1": {
+     "detect": 2.8127799034118652,
+     "early_switch": false,
+     "interruption": 3.059000015258789,
+     "max_delay": 2.0880000591278076,
+     "lost": 0,
+     "dup": 3,
+     "ooo": 0,
+     "failback_gap": 2.06499981880188,
+     "failback": true
+    },
+    "0": {
+     "detect": 2.1145055294036865,
+     "early_switch": false,
+     "interruption": 3.056999921798706,
+     "max_delay": 2.0910000801086426,
+     "lost": 0,
+     "dup": 3,
+     "ooo": 0,
+     "failback_gap": 2.0789999961853027,
+     "failback": true
+    },
+    "8": {
+     "detect": 3.024752140045166,
+     "early_switch": false,
+     "interruption": 3.055999994277954,
+     "max_delay": 2.0839998722076416,
+     "lost": 0,
+     "dup": 3,
+     "ooo": 0,
+     "failback_gap": 2.069000005722046,
+     "failback": true
+    },
+    "5": {
+     "detect": 2.9516985416412354,
+     "early_switch": false,
+     "interruption": 3.0390000343322754,
+     "max_delay": 2.0899999141693115,
+     "lost": 0,
+     "dup": 3,
+     "ooo": 0,
+     "failback_gap": 2.065000057220459,
+     "failback": true
+    },
+    "6": {
+     "detect": 2.6910109519958496,
+     "early_switch": false,
+     "interruption": 3.058000087738037,
+     "max_delay": 2.0880000591278076,
+     "lost": 0,
+     "dup": 3,
+     "ooo": 0,
+     "failback_gap": 2.07099986076355,
+     "failback": true
+    }
+   },
+   "rtt": {
+    "7": {
+     "detect": 1.182605504989624,
+     "early_switch": false,
+     "interruption": 2.061000108718872,
+     "max_delay": 1.0830001831054688,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.061000108718872,
+     "failback": true
+    },
+    "3": {
+     "detect": 1.480724573135376,
+     "early_switch": false,
+     "interruption": 2.070000171661377,
+     "max_delay": 1.0789999961853027,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.070000171661377,
+     "failback": true
+    },
+    "2": {
+     "detect": 1.817824125289917,
+     "early_switch": false,
+     "interruption": 2.071000099182129,
+     "max_delay": 1.0720000267028809,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.071000099182129,
+     "failback": true
+    },
+    "4": {
+     "detect": 1.3537821769714355,
+     "early_switch": false,
+     "interruption": 2.072000026702881,
+     "max_delay": 1.0789999961853027,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.072000026702881,
+     "failback": true
+    },
+    "9": {
+     "detect": 1.8252575397491455,
+     "early_switch": false,
+     "interruption": 2.062000036239624,
+     "max_delay": 1.0810000896453857,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.062000036239624,
+     "failback": true
+    },
+    "1": {
+     "detect": 1.8027799129486084,
+     "early_switch": false,
+     "interruption": 2.07099986076355,
+     "max_delay": 1.0880000591278076,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.07099986076355,
+     "failback": true
+    },
+    "0": {
+     "detect": 1.1085054874420166,
+     "early_switch": false,
+     "interruption": 2.0799999237060547,
+     "max_delay": 1.0749998092651367,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.0799999237060547,
+     "failback": true
+    },
+    "8": {
+     "detect": 2.016752004623413,
+     "early_switch": false,
+     "interruption": 2.0829999446868896,
+     "max_delay": 1.0759999752044678,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.0829999446868896,
+     "failback": true
+    },
+    "5": {
+     "detect": 1.9426984786987305,
+     "early_switch": false,
+     "interruption": 2.07099986076355,
+     "max_delay": 1.0699999332427979,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.07099986076355,
+     "failback": true
+    },
+    "6": {
+     "detect": 1.6840109825134277,
+     "early_switch": false,
+     "interruption": 2.057000160217285,
+     "max_delay": 1.0779998302459717,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.057000160217285,
+     "failback": true
+    }
+   }
+  },
+  "30": {
+   "off": {
+    "3": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 39.1560001373291,
+     "max_delay": 38.182000160217285,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "0": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 38.157999992370605,
+     "max_delay": 37.19000005722046,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "7": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 38.58399987220764,
+     "max_delay": 37.61500000953674,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "4": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 38.75699996948242,
+     "max_delay": 37.771000146865845,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "5": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 37.117000102996826,
+     "max_delay": 36.16799998283386,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "8": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 37.55799984931946,
+     "max_delay": 36.579999923706055,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "9": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 38.174999952316284,
+     "max_delay": 37.193000078201294,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "6": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 38.15899991989136,
+     "max_delay": 37.18299984931946,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "1": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 37.175999879837036,
+     "max_delay": 36.22499990463257,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "2": {
+     "detect": null,
+     "early_switch": false,
+     "interruption": 36.126999855041504,
+     "max_delay": 35.16099977493286,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    }
+   },
+   "reconnect": {
+    "3": {
+     "detect": 5.941666126251221,
+     "early_switch": false,
+     "interruption": 6.055999994277954,
+     "max_delay": 5.0959999561309814,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "0": {
+     "detect": 10.416978120803833,
+     "early_switch": false,
+     "interruption": 11.034000158309937,
+     "max_delay": 10.087000131607056,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "7": {
+     "detect": 5.766322135925293,
+     "early_switch": false,
+     "interruption": 6.059999942779541,
+     "max_delay": 5.085000038146973,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "4": {
+     "detect": 6.540662527084351,
+     "early_switch": false,
+     "interruption": 7.052999973297119,
+     "max_delay": 6.1000001430511475,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "5": {
+     "detect": 11.322301864624023,
+     "early_switch": false,
+     "interruption": 12.025000095367432,
+     "max_delay": 11.075000047683716,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "8": {
+     "detect": 11.418750524520874,
+     "early_switch": false,
+     "interruption": 12.037999868392944,
+     "max_delay": 11.069999933242798,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "9": {
+     "detect": 5.8690173625946045,
+     "early_switch": false,
+     "interruption": 6.065999984741211,
+     "max_delay": 5.0929999351501465,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "6": {
+     "detect": 10.74011492729187,
+     "early_switch": false,
+     "interruption": 11.054999828338623,
+     "max_delay": 10.078999996185303,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "1": {
+     "detect": 9.901295900344849,
+     "early_switch": false,
+     "interruption": 10.054999828338623,
+     "max_delay": 9.111999988555908,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    },
+    "2": {
+     "detect": 9.383092403411865,
+     "early_switch": false,
+     "interruption": 10.051000118255615,
+     "max_delay": 9.10700011253357,
+     "lost": 0,
+     "dup": 0,
+     "ooo": 0,
+     "failback_gap": null,
+     "failback": false
+    }
+   },
+   "fixed": {
+    "3": {
+     "detect": 2.9426662921905518,
+     "early_switch": false,
+     "interruption": 3.061000108718872,
+     "max_delay": 2.0850000381469727,
+     "lost": 0,
+     "dup": 3,
+     "ooo": 0,
+     "failback_gap": 2.0759999752044678,
+     "failback": true
+    },
+    "0": {
+     "detect": 2.3799781799316406,
+     "early_switch": false,
+     "interruption": 3.0369999408721924,
+     "max_delay": 2.0859999656677246,
+     "lost": 0,
+     "dup": 1,
+     "ooo": 0,
+     "failback_gap": 2.0880000591278076,
+     "failback": true
+    },
+    "7": {
+     "detect": 2.7823219299316406,
+     "early_switch": false,
+     "interruption": 3.0399999618530273,
+     "max_delay": 2.0880000591278076,
+     "lost": 0,
+     "dup": 3,
+     "ooo": 0,
+     "failback_gap": 2.079000234603882,
+     "failback": true
+    },
+    "4": {
+     "detect": 2.5306625366210938,
+     "early_switch": false,
+     "interruption": 3.0409998893737793,
+     "max_delay": 2.0829999446868896,
+     "lost": 0,
+     "dup": 3,
+     "ooo": 0,
+     "failback_gap": 2.072000026702881,
+     "failback": true
+    },
+    "5": {
+     "detect": 2.3263018131256104,
+     "early_switch": false,
+     "interruption": 3.0360000133514404,
+     "max_delay": 2.065999984741211,
+     "lost": 0,
+     "dup": 3,
+     "ooo": 0,
+     "failback_gap": 2.0789999961853027,
+     "failback": true
+    },
+    "8": {
+     "detect": 2.4607505798339844,
+     "early_switch": false,
+     "interruption": 3.0480000972747803,
+     "max_delay": 2.0859999656677246,
+     "lost": 0,
+     "dup": 3,
+     "ooo": 0,
+     "failback_gap": 2.075000047683716,
+     "failback": true
+    },
+    "9": {
+     "detect": 2.8040173053741455,
+     "early_switch": false,
+     "interruption": 3.0320000648498535,
+     "max_delay": 2.080000162124634,
+     "lost": 0,
+     "dup": 1,
+     "ooo": 0,
+     "failback_gap": 2.072999954223633,
+     "failback": true
+    },
+    "6": {
+     "detect": 2.7221150398254395,
+     "early_switch": false,
+     "interruption": 3.0350000858306885,
+     "max_delay": 2.0869998931884766,
+     "lost": 0,
+     "dup": 3,
+     "ooo": 0,
+     "failback_gap": 2.075000047683716,
+     "failback": true
+    },
+    "1": {
+     "detect": 2.9052958488464355,
+     "early_switch": false,
+     "interruption": 3.052999973297119,
+     "max_delay": 2.0870001316070557,
+     "lost": 0,
+     "dup": 3,
+     "ooo": 0,
+     "failback_gap": 2.4680001735687256,
+     "failback": true
+    },
+    "2": {
+     "detect": 2.3460922241210938,
+     "early_switch": false,
+     "interruption": 3.057999849319458,
+     "max_delay": 2.0909998416900635,
+     "lost": 0,
+     "dup": 3,
+     "ooo": 0,
+     "failback_gap": 2.061000108718872,
+     "failback": true
+    }
+   },
+   "rtt": {
+    "3": {
+     "detect": 1.9336662292480469,
+     "early_switch": false,
+     "interruption": 2.075000047683716,
+     "max_delay": 1.0739998817443848,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.075000047683716,
+     "failback": true
+    },
+    "0": {
+     "detect": 1.3729782104492188,
+     "early_switch": false,
+     "interruption": 2.055999994277954,
+     "max_delay": 1.0789999961853027,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.055999994277954,
+     "failback": true
+    },
+    "7": {
+     "detect": 1.7713220119476318,
+     "early_switch": false,
+     "interruption": 2.061000108718872,
+     "max_delay": 1.0759999752044678,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.061000108718872,
+     "failback": true
+    },
+    "4": {
+     "detect": 1.5376625061035156,
+     "early_switch": false,
+     "interruption": 2.059999942779541,
+     "max_delay": 1.0739998817443848,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.059999942779541,
+     "failback": true
+    },
+    "5": {
+     "detect": 1.3263018131256104,
+     "early_switch": false,
+     "interruption": 2.078000068664551,
+     "max_delay": 1.0879998207092285,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.078000068664551,
+     "failback": true
+    },
+    "8": {
+     "detect": 1.4467506408691406,
+     "early_switch": false,
+     "interruption": 2.4619998931884766,
+     "max_delay": 1.069000005722046,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.4619998931884766,
+     "failback": true
+    },
+    "9": {
+     "detect": 1.7920172214508057,
+     "early_switch": false,
+     "interruption": 2.068000078201294,
+     "max_delay": 1.0789999961853027,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.068000078201294,
+     "failback": true
+    },
+    "6": {
+     "detect": 1.7301149368286133,
+     "early_switch": false,
+     "interruption": 2.063000202178955,
+     "max_delay": 1.0820000171661377,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.063000202178955,
+     "failback": true
+    },
+    "1": {
+     "detect": 1.932295799255371,
+     "early_switch": false,
+     "interruption": 2.305999994277954,
+     "max_delay": 1.0870001316070557,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.305999994277954,
+     "failback": true
+    },
+    "2": {
+     "detect": 1.337092399597168,
+     "early_switch": false,
+     "interruption": 2.0869998931884766,
+     "max_delay": 1.1180000305175781,
+     "lost": 0,
+     "dup": 2,
+     "ooo": 0,
+     "failback_gap": 2.069999933242798,
+     "failback": true
+    }
+   }
+  }
+ }
+}
