@@ -1,8 +1,8 @@
-# SkyGuard AI
+# Cybersheild
 
 **AI that guards IoT devices across satellite and 5G links.**
 
-SkyGuard AI is the hackathon name of the CyberShield SOC project: an MQTT security operations platform with explainable rules, link-aware flood detection, learned anomaly detectors, an AI analyst, and a 3D dashboard. All satellite and 5G links in the experiments are emulated; no real satellite or 5G system was used.
+ the CyberShield SOC project: an MQTT security operations platform with explainable rules, link-aware flood detection, learned anomaly detectors, an AI analyst, and a 3D dashboard. All satellite and 5G links in the experiments are emulated; no real satellite or 5G system was used.
 
 - `experiments/` holds the scripts and result files of experiments X1-X5 (link-aware detection, anomaly detectors under drift, failover, link emulation, scalability) and the backend patch (`backend-patch-v2.8`).
 - Secrets are never committed: copy `.env.example` to `.env` and `iot/esp32/cybershield_esp32/config.example.h` to `config.h`, then fill in your own values.
